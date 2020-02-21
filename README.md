@@ -1,1 +1,1 @@
-# praktiikum
+# praktikum
