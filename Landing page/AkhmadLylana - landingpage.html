@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Landing page Akhmad Lylana </title>
+	<style>
+		 body {
+		 	background-color: green;
+		 }
+		 #container{
+		 	background-color: orange;
+		 	width: 800px;
+		 	height: 900px;
+		 	margin: 10px auto;
+		 }
+		 #container>header{
+		 	width: 760px;
+		 	height: 140px;
+		 	background-color: red;
+		 	margin : 20px 20px;
+		 	float: left;
+		 }
+		 nav{
+		 	width: 760px;
+            height: 50px;
+            background-color: aqua;
+            margin-top: 0px;
+            margin-right: 20px;
+            margin-bottom:20px;
+            margin-left: 20px;
+            float: left;
+		 }
+		 nav ul{
+		 	list-style: none;
+		 	float: left;
+		 	overflow: auto;
+		 	margin: 10px;
+		 	padding: 0px
+		 }
+		 nav ul li{
+		 	display: block;
+		 	padding: 5px 10px 5px 10px;
+		 	float: left;
+		 	margin:0px;
+		 	border-right: #AAAAAA 1px solid;  
+		 }
+		 nav ul li .submenu{
+		 	display: none;
+		 }
+		 nav ul li:hover .submenu{
+		 	display: block;
+		 	margin:0px;
+		 	width: 150px;
+		 	position: absolute;
+		 	margin-top: 5px;
+		 	border: #AAAAAA 1px solid;
+		 	background: yellow
+		 }
+		 nav ul li:hover .submenu li{
+		 	display: block;
+		 	width: 150px;
+		 	padding: 5px;
+		 	float: left;
+		 	border: none;
+		 }
+		 nav ul li:hover{
+		 	background: red;
+		 }
+		 nav ul li a{
+		 	color: #000000;
+		 	text-decoration: none;	
+
+		 }
+		 aside{
+		 	width: 200px;
+            height: 500px;
+            background-color: blue;
+            margin-top: 0px;
+            margin-right: 20px;
+            margin-bottom:20px;
+            margin-left: 20px;
+            float: left;
+		 } 
+		 main{
+            width: 520px;
+            height: 500px;
+            background-color: blue;
+            margin-top: 0px;
+            margin-right: 20px;
+            margin-bottom:20px;
+            margin-left: 20px;
+            float: left;
+		 }
+		 footer{
+			width: 760px;
+            height: 110px;
+            background-color: yellow;
+            margin-top: 0px;
+            margin-right: 20px;
+            margin-bottom:20px;
+            margin-left: 20px;
+            float: left;		 	
+		 }
+	</style>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<img src="yt.jpg" width="760" height="140">
+		</header>
+		<nav>
+			<ul>
+				<li>Home</li>
+			</ul>
+			<ul>
+				<li>Profil</li>
+			</ul>
+			<ul>
+				<li>Music</li>
+			</ul>
+			<ul>
+				<li>Walpeper</li>
+			</ul>
+			<ul>
+				<li><a href="video.html">video</a>
+					<ul class="submenu">
+					<ul>
+						<li>Belajar Video</li>
+					</ul>
+					<ul>
+						<li>Corel draw</li>
+					</ul>
+					<ul>
+						<li>Sony vegas</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<aside>
+
+		</aside>
+		<main>
+
+		</main>
+		<footer>
+			<img src="footer.jpg" width="760" height="110">
+		</footer>
+	</div>
+</body>
+</html>
