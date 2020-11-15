@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Mata Uang Asing</th>
+                <th>Valas</th>
+                <th>Nilai Rupiah</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="asing"></td>
+                <td>
+                    <select name="kurs" id="kurs" onchange="hitung()">
+                        <option value="">-pilih-</option>
+                        <option value="dollarUS">Dollar US</option>
+                        <option value="dollarSG">Dollar Singapore</option>
+                        <option value="RM">Ringgit Malaysia</option>
+                        <option value="yen">Yen Jepang</option>
+                        <option value="euro">Euro</option>
+                        <option value="riyal">Riyal Arab Saudiol</option>
+                    </select>
+                </td>
+                <td><input type="text" id="rupiah"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script>
+    function hitung(){
+        let asing = document.getElementById("asing");
+        let kurs = document.getElementById("kurs");
+        let rupiah = document.getElementById("rupiah");
+        if (kurs.value == "dollarUS") {
+            hasil = asing.value * 9915;
+            rupiah.value = hasil;
+        }else if(kurs.value == "dollarSG") {
+            hasil = asing.value * 13472;
+            rupiah.value = hasil;
+        }else if(kurs.value == "RM") {
+            hasil = asing.value * 874;
+            rupiah.value = hasil;
+        }else if(kurs.value == "yen") {
+            hasil = asing.value * 120;
+            rupiah.value = hasil;
+        }else if(kurs.value == "euro") {
+            hasil = asing.value * 15888;
+            rupiah.value = hasil;
+        }else if(kurs.value == "riyal") {
+            hasil = asing.value * 3592;
+            rupiah.value = hasil;
+        }
+    }
+</script>
+</html>
