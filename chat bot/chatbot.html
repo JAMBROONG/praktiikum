@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Chat Bot</h2>
+    <p id="bot"></p>
+    <input type="text" id="input" onkeydown="if (event.keyCode == 13) {balas()}">
+</body>
+<script>
+    let balasan = {
+            "assalamualaikum" : "waalaikum salam",
+            "halo" : "hai",
+            "apa kabar?" : "saya baik",
+            "oke" : ":)",
+            "p" : "y",
+            "mau ga jadi pacar aku?" : "kita temenan aja ya :)"
+        };
+    function balas(){
+        
+        let user = document.getElementById("input").value;
+        document.getElementById("input").value = "";
+        document.getElementById("bot").innerHTML += "user : " + user + "<br>";
+        if (user in balasan){
+            document.getElementById("bot").innerHTML += "bot : " + balasan[user] + "<br>";
+        } else{
+            document.getElementById("bot").innerHTML += "bot : Saya tidak mengerti <br>";
+        }
+    }
+</script>
+</html>
