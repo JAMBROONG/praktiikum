@@ -1,4 +1,4 @@
-<footer><p>Created by <a href="http://nurulfikri.ac.id">Pusinfo NF &copy;2017</a></p></footer>
+<footer><p>Created by <a href="http://nurulfikri.ac.id">Akhmad Lylana - STT NF &copy;2017</a></p></footer>
 </div>
 </body>
 <script>
