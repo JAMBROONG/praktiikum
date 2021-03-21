@@ -25,15 +25,15 @@ include_once "atas.php";
             </div>
             <div class="form-group">
                 <label for="uts">Nilai UTS</label>
-                <input type="text" name="uts" id="uts" class="form-control" placeholder="Nilai UTS" required>
+                <input type="text" name="uts" id="uts" class="form-control" placeholder="Nilai UTS (Input Wajib Angka)" onkeypress="return hanyaAngka(event)" required>
             </div>
             <div class="form-group">
                 <label for="uas">Nilai UAS</label>
-                <input type="text" name="uas" id="uas" class="form-control" placeholder="Nilai UAS" required>
+                <input type="text" name="uas" id="uas" class="form-control" placeholder="Nilai UAS (Input Wajib Angka)" onkeypress="return hanyaAngka(event)" required>
             </div>
             <div class="form-group">
                 <label for="tugas">Nilai Tugas/Praktikum</label>
-                <input type="text" name="tugas" id="tugas" class="form-control" placeholder="Nilai Tugas/Praktikum" required>
+                <input type="text" name="tugas" id="tugas" class="form-control" placeholder="Nilai Tugas/Praktikum (Input Wajib Angka)" onkeypress="return hanyaAngka(event)" required>
             </div>
             <button type="submit" name="proses" value="Sistem Penilaian" class="btn btn-primary"><i class="fas fa-save"></i> Simpan</button>
         </form>
